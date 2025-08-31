@@ -7,7 +7,7 @@ Parsing Pipeline:
 The parser is a hand-written recursive-descent parser. Input SQL is split into statements, tokenized, and converted into AST nodes such as Select, Insert, CreateTable, Update, and Delete. Each node has explicit fields, for example, a Select node includes projection, table name, and optional WHERE or LIMIT clauses. Errors are reported with exact source positions, making diagnostics clear. Thus, parsing remains lightweight, dependency-free, and precise.
 Execution:
 Execution is performed through overloaded Database::exec methods, one per AST type. Insert checks schema compatibility before appending a row. Select scans tables, applies filters with std::visit, and builds result sets. Update and Delete also scan rows, applying conditions to modify or remove data. This design ensures every statement type has a dedicated, type-safe execution path.
-Flow Of Code:
+Flow Of Code: 
 SQL input → Parser → AST → Executor → Database → Result.
 Testing:
 The project includes unit tests to verify correctness and robustness. Using Catch2 and GTest, test cases were written for creating tables, inserting rows, selecting with and without predicates, updating and deleting data, and handling invalid queries. Negative tests confirm that errors are reported for schema mismatches, unknown identifiers, or malformed SQL. Compilation with( -Wall -Wextra) and sanitizers (-fsanitize=address,undefined) ensures that the implementation is safe, correct, and free from memory errors.

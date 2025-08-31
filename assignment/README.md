@@ -6,7 +6,6 @@ intended as an educational exercise for parsing, data structure design and
 code organization in C++. The database supports creating tables, inserting
 data, deleting and updating rows, and selecting data with simple
 conditions.
-
 ## Features
 
 * **CREATE TABLE** with `int` and `str` column types.

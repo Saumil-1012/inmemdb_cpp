@@ -7,6 +7,7 @@
 #include <sstream>
 #include <cctype>
 
+
 namespace db {
 
 std::size_t Table::col_index(const std::string& c) const {

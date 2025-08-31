@@ -4,6 +4,7 @@ project(Project LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+
 find_package(Catch2 REQUIRED)
 find_package(GTest REQUIRED)
 find_package(Qt6 COMPONENTS Core Widgets REQUIRED)

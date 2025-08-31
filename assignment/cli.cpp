@@ -57,6 +57,7 @@ int main(int argc, char** argv) {
                 if (fmt == OutputFormat::ASCII)
                     std::cout << render_ascii(out);
                 else
+
                     std::cout << render_csv(out);
             } else if (auto* s = dynamic_cast<CreateTable*>(stmt.get())) {
                 db.exec(*s);

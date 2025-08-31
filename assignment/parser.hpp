@@ -8,7 +8,6 @@
 #include <vector>
 
 namespace db {
-
 enum class TokKind {
     IDENT, NUMBER, STRING, STAR, COMMA, LPAREN, RPAREN, SEMI,
     OP_EQ, OP_NEQ, OP_LT, OP_LE, OP_GT, OP_GE,

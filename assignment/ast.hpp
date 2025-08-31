@@ -87,6 +87,7 @@ struct Insert : Statement {
     std::vector<std::vector<Value>> values_lists;
     virtual ~Insert() = default;
 };
+
 struct Delete : Statement {
     std::string table;
     std::optional<Condition> where;

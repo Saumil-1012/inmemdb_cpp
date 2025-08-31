@@ -26,7 +26,6 @@ inline Type parse_type(const std::string& s) {
 inline Value default_value(Type t) {
     return t == Type::INT ? Value{Int(0)} : Value{Str("")};
 }
-
 inline std::string to_string(const Value& v) {
     if (std::holds_alternative<Int>(v)) return std::to_string(std::get<Int>(v));
     return std::get<Str>(v);

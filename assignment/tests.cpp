@@ -13,7 +13,7 @@ using namespace db;
 
 TEST_CASE("create/insert/select", "[basic]") {
     Database db;
-    auto tc = tokenize("CREATE TABLE t (name str, age int)");
+     auto tc = tokenize("CREATE TABLE t (name str, age int)");
     TokenStream tcs{tc};
     auto create_stmt = parse_statement(tcs);
     db.exec(*static_cast<CreateTable*>(create_stmt.get()));

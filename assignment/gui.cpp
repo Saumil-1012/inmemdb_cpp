@@ -5,7 +5,6 @@
 #include <QPushButton>
 #include <QVBoxLayout>
 #include <QString>
-
 #include <cctype>
 #include <sstream>
 

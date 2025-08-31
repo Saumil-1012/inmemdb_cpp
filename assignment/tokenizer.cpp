@@ -477,7 +477,7 @@ std::unique_ptr<Statement> parse_statement(TokenStream& ts) {
         case TokKind::KW_CREATE: return parse_create(ts);
         case TokKind::KW_INSERT: return parse_insert(ts);
         case TokKind::KW_DELETE: return parse_delete(ts);
-        case TokKind::KW_UPDATE: return parse_update(ts);
+         case TokKind::KW_UPDATE: return parse_update(ts);
         case TokKind::KW_SELECT: return parse_select(ts);
         case TokKind::KW_DUMP: return parse_dump(ts);
         case TokKind::KW_LOAD: return parse_load(ts);

@@ -10,7 +10,7 @@ INSERT INTO students (id, name, grade, score) VALUES
 
 INSERT INTO courses (id, name, teacher) VALUES
                                             (1, "Math", "Dr. Smith"),
-                                            (2, "Science", "Dr. Johnson"),
+                                             (2, "Science", "Dr. Johnson"),
                                             (3, "History", "Dr. Brown");
 
 SELECT * FROM students WHERE score >= 90;

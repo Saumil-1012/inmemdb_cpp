@@ -62,7 +62,6 @@ static std::string csv_escape(const std::string& s) {
     out += "\"";
     return out;
 }
-
 std::string render_csv(const ResultTable& t) {
     std::ostringstream out;
 
