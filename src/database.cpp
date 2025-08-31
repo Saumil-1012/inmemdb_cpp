@@ -458,5 +458,4 @@ void Database::load(const std::string& filename) {
     }
 }
 
-
-} // namespace db
+}
